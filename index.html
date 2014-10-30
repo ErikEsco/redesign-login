@@ -4,12 +4,35 @@
 	<title>MyATT Login</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="reset.css" />
-	<link rel="stylesheet" href="style.css" />
+	<!--<link rel="stylesheet" href="reset.css" /> -->
+	<link rel="stylesheet" href="screen.css" />
 </head>
 
 <body>
 	<article id="content">
+		<form method="post" action="#" class="form">
+			<fieldset>
+				<legend>Log In to ATT!</legend>
+				<div class="email">
+				<label for="email">E-Mail:</label>
+				<input type="text" id="email" autofocus required placeholder="E-Mail Address">
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" id="create" value="false">
+				<label for="create">Create new user!</label>
+			</div>
+			<div class="password">
+				<label for="password">Password:</label>
+				<input type="password" id="password" required placeholder="Password">
+			</div>
+			<div class="forgot">
+				Forgot <a href="https://www.att.com/olam/enterEmailForgotId.myworld"> Email</a> or <a 	href="https://www.att.com/olam/unauth/fpwdEnterUserId.myworld">Password?</a>
+			</div>
+			<div class="submit">
+				<button type="submit" value="submit">Log In</button>
+			</div>
+			</fieldset>
+		</form>
 	</article>
 
 	<footer id="footer">
