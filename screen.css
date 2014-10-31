@@ -1,0 +1,19 @@
+a { 
+	display: inline;
+	padding: 2em;
+}
+fieldset {
+	width: 15em;
+	padding-left: 2em;
+	padding: 1em;
+	border: 0.1em solid;
+	margin: 2em;
+}
+
+legend
+{
+color: black;
+background: orange;
+border: 0.1em solid ;
+padding: 0.2em;
+}
