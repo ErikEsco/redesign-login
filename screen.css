@@ -20,9 +20,6 @@ body {
 	width: 100%;
 	color:grey;
 }
-.login_form label {
-	display: block;
-}
 
 @media screen and (min-width: 20em) {
   
@@ -53,39 +50,31 @@ body {
 
 .field {
 	width: 15em;
-	height: 15em;
 	padding: 1em;
 	border: 0.1em solid;
 	float: right;
 	margin: 10%;
-	line-height: 1em;
+	line-height: 2em;
 	-webkit-border-radius: 1em;
 	-moz-border-radius: 1em;
 	border-radius: 1em;
+	padding-left: 2em;
 }
 
-.field label {
-	line-height: 2em;
-	display: block;
-	padding-left: 1em;
-	
-}
 .field input {
 	border-radius:1em;
  -moz-border-radius:1em;
  -webkit-border-radius:1em;
  line-height: 1.5em;
  padding: 0.5em;
+ float: right;
 }
 
-div .email {
-	padding-left: 5em;
-}
 .field legend {
 	color: black;
 	background: orange;
-	border: 0.1em solid ;
-	padding: 0.2em;
+	border: 0.1em solid;
+	padding: 0.5em;
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
 	border-radius: 0.5em;
@@ -93,13 +82,16 @@ div .email {
 
 .forgot {
 	text-transform: lowercase;
-	padding: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 .submit button{
 	background-color: blue;
 	padding: 0.5em;
-	float:left;
+	width: 100%;
 	text-align: center;
-
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
 }
