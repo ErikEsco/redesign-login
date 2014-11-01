@@ -3,14 +3,13 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%; 
-  font-size: 1em;
-  line-height: 1em;
-  text-align: left;
   background-color: white;
-  color: grey;
+  color: black;
   position:relative;
 }
-
+body {
+	padding-top: 0em;
+}
 #footer {
 	padding-left: 7em;
   padding-right: 7em;
@@ -19,38 +18,24 @@ html {
 	background-color: orange;
 	display: inline-block;
 	width: 100%;
+	color:grey;
 }
 .login_form label {
 	display: block;
 }
 
 @media screen and (min-width: 20em) {
-   html{
-    padding-left: 3em;
-    padding-right: 3em;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 }
 
 @media screen and (min-width: 50em) {
-   html{
-    padding-left: 7em;
-    padding-right: 7em;
-    margin-left: auto;
-    margin-right: auto;
-  }
+ 
 }
 
 @media screen and (min-width: 80em) {
-  html{
-    padding-left: 10em;
-    padding-right: 10em;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 }
-nav { 
+.navbar { 
 	display: inline;
 	position: relative;
 	float:left;
@@ -60,19 +45,61 @@ nav {
 	margin: 0 auto;
 }
 
+.navbar a {
+	padding:2em;
+	padding-left: 5em;
+
+}
+
 .field {
 	width: 15em;
 	height: 15em;
 	padding: 1em;
 	border: 0.1em solid;
-	margin:25%;
+	float: right;
+	margin: 10%;
 	line-height: 1em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
 }
 
-legend
-{
+.field label {
+	line-height: 2em;
+	display: block;
+	padding-left: 1em;
+	
+}
+.field input {
+	border-radius:1em;
+ -moz-border-radius:1em;
+ -webkit-border-radius:1em;
+ line-height: 1.5em;
+ padding: 0.5em;
+}
+
+div .email {
+	padding-left: 5em;
+}
+.field legend {
 	color: black;
 	background: orange;
 	border: 0.1em solid ;
 	padding: 0.2em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+}
+
+.forgot {
+	text-transform: lowercase;
+	padding: 1em;
+}
+
+.submit button{
+	background-color: blue;
+	padding: 0.5em;
+	float:left;
+	text-align: center;
+
 }
