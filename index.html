@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!--<link rel="stylesheet" href="reset.css" /> -->
 	<link rel="stylesheet" href="screen.css" />
+	<link rel="stylesheet" href="show.js" />
 </head>
 
 <body>
@@ -19,18 +20,11 @@
 </div>
 		<form method="post" action=" " class="login_form" name="login_form">
 			<fieldset class="field">
-				<legend>Log In</legend>
 				<div class="email">
 					<span>
 				<label for="email">E-Mail</span>
 				<input type="email" id="email" name="email" autofocus required placeholder="E-Mail Address">
 				</label>
-			</div>
-			<div class="checkbox">
-				<label for="create">
-				<input type="checkbox" id="create" value="false">
-				Check if new user
-			</label>
 			</div>
 			<div class="password">
 				<span>
@@ -38,15 +32,27 @@
 				<input type="password" id="password" name="password" required placeholder="Password">
 				</label>
 			</div>
+			<div class="checkbox">
+				<span><label for="create">
+				<input type="checkbox" id="checkbox"  onclick="showHide()">
+				Check if new user</span>
+			</label>
+			</div>
+			<div>
+				<label for="phone" class="hidden">Phone Number
+				<input type="phone" id="phone" name="phone" class="hidden" placeholder="Phone Number">
+				<label for="name" class="hidden">Name
+				<input type="name" id="name" name="name" class="hidden" placeholder="Full Name">
+			</div>
 			<div class="forgot">
-				Forgot <a href="https://www.att.com/olam/enterEmailForgotId.myworld">Email</a> or <a href="https://www.att.com/olam/unauth/fpwdEnterUserId.myworld">Password</a>
+				<a href="https://www.att.com/olam/enterEmailForgotId.myworld">Forgot Email</a> | <a href="https://www.att.com/olam/unauth/fpwdEnterUserId.myworld">Forgot Password</a>
 			</div>
 			<div class="submit">
 				<button type="submit" name="submit" value="login"><strong>Log In</strong></button>
 			</div>
 			</fieldset>
 		</form>
-
+	<script src="show.js"></script>
 	<footer id="footer">
 		<small>Login Re-Design - Erik Escobar-Ocon</small>
 		<small>COM 327 - Fall 2014</small>
