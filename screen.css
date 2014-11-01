@@ -28,7 +28,11 @@ html {
 
 .navbar a {
 	padding:2em;
-	padding-left: 5em;
+	margin-left: 5%;
+}
+.navbar input{
+	float:right;
+	margin-right: 10%;
 }
 
 .field {
@@ -40,7 +44,7 @@ html {
 	border: 0.1em solid;
 	line-height: 2em;
 	float: left;
-	margin: 10%;
+	margin: 5%;
 	padding-left: 2em;
 }
 
