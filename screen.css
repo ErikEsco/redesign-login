@@ -1,19 +1,78 @@
-a { 
-	display: inline;
-	padding: 2em;
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; 
+  font-size: 1em;
+  line-height: 1em;
+  text-align: left;
+  background-color: white;
+  color: grey;
+  position:relative;
 }
-fieldset {
+
+#footer {
+	padding-left: 7em;
+  padding-right: 7em;
+  padding-top: 2em;
+	padding-bottom: 2.5em;
+	background-color: orange;
+	display: inline-block;
+	width: 100%;
+}
+.login_form label {
+	display: block;
+}
+
+@media screen and (min-width: 20em) {
+   html{
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 50em) {
+   html{
+    padding-left: 7em;
+    padding-right: 7em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  html{
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+nav { 
+	display: inline;
+	position: relative;
+	float:left;
+	padding: 1em;
+	width:100%;
+	background-color: orange;
+	margin: 0 auto;
+}
+
+.field {
 	width: 15em;
-	padding-left: 2em;
+	height: 15em;
 	padding: 1em;
 	border: 0.1em solid;
-	margin: 2em;
+	margin:25%;
+	line-height: 1em;
 }
 
 legend
 {
-color: black;
-background: orange;
-border: 0.1em solid ;
-padding: 0.2em;
+	color: black;
+	background: orange;
+	border: 0.1em solid ;
+	padding: 0.2em;
 }
